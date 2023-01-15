@@ -1,5 +1,5 @@
 //import * as React from 'react';
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import auth from '@react-native-firebase/auth';
 import {Layout, Text, Button, Divider} from '@ui-kitten/components';
 import { StyleSheet, View, TouchableOpacity } from 'react-native';
@@ -15,13 +15,10 @@ const HomeAdmin = ({ route, navigation }) => {
   };
 
   return (
-    <Layout>
+    <Layout style={styles.row}>
 
       <View style={styles.alternativeContainer}>
-      <Text style={styles.text} appearance='alternative'>
-      Bem Vindo,  {auth().currentUser?.email}
-      </Text>
-      <Text style={styles.text} appearance='alternative'>Admin {Item}</Text>
+      <Text style={styles.text} appearance='alternative'>Admin {Item} </Text>
       </View>
 
       <Divider/>
@@ -59,14 +56,6 @@ const HomeAdmin = ({ route, navigation }) => {
       <Text></Text>
       <Text></Text>
       <Text></Text>
-      <Text></Text>
-      <Text></Text>
-      <Text></Text>
-      <Text></Text>
-      <Text></Text>
-      <Text></Text>
-      <Text></Text>
-      <Text></Text>
 
       <TouchableOpacity
       activeOpacity={0.7}
@@ -81,11 +70,15 @@ const HomeAdmin = ({ route, navigation }) => {
 
 const styles = StyleSheet.create({
   row: {
-    flexDirection: 'row',
-    alignItems: 'center',
+    paddingHorizontal: 10,
+    marginVertical: 5,
+    borderRadius: 5,
+    width: '100%',
+    paddingTop: '50%',
   },
   text: {
     margin: 2,
+    fontWeight: 'bold'
   },
   alternativeContainer: {
     marginVertical: 2,

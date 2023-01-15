@@ -191,7 +191,7 @@ const LoginScreen = ({ navigation, route }) => {
       selectedIndex={selectedIndex}
       onSelect={index => setSelectedIndex(index)}>
       <Tab title='Login'>
-        <Layout style={styles.tabContainer}>
+        <Layout style={styles.row}>
         <Input
           value={inputUsername}
           placeholder="Username"
@@ -237,7 +237,7 @@ const LoginScreen = ({ navigation, route }) => {
         </Layout>
       </Tab>
       <Tab title='Register'>
-        <Layout style={styles.tabContainer}>
+        <Layout style={styles.row}>
         <Input
           value={inputUsername}
           placeholder="Username"
@@ -287,16 +287,22 @@ const LoginScreen = ({ navigation, route }) => {
 
 
 const styles = StyleSheet.create({
-  tabContainer: {
-    //alignItems: 'center',
-    justifyContent: 'center',
-    paddingTop: 30
+  row: {
+    paddingHorizontal: 10,
+    marginVertical: 5,
+    borderRadius: 5,
+    width: '100%',
+    paddingTop: '50%',
   },
-  teste: {
-    //alignItems: 'center',
-    //justifyContent: 'center',
-    paddingTop: 200
-  },
+  textinput: {
+    borderRadius: 5,
+    borderColor: '#e8e8e8',
+    borderWidth: 1,
+    backgroundColor: 'white',
+    marginVertical: 5,
+  }
 });
+
+
 
 export default LoginScreen;

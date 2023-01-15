@@ -107,11 +107,11 @@ const Home2 = ({ route, navigation }) => {
     
   return (
 
-    <Layout>
+    <Layout style={styles.row}>
 
     <View style={styles.alternativeContainer}>
     <Text style={styles.text} appearance='alternative'>
-    Bem Vindo,  {auth().currentUser?.email}
+    Bem Vindo, {Item}
     </Text>
     </View>
     
@@ -149,14 +149,6 @@ const Home2 = ({ route, navigation }) => {
     Terminar Sessão
     </Button>
 
-    <Text></Text>
-      <Text></Text>
-      <Text></Text>
-      <Text></Text>
-      <Text></Text>
-      <Text></Text>
-      <Text></Text>
-      <Text></Text>
       <Text></Text>
       <Text></Text>
       <Text></Text>
@@ -188,11 +180,15 @@ const Home2 = ({ route, navigation }) => {
 
 const styles = StyleSheet.create({
     row: {
-      flexDirection: 'row',
-      alignItems: 'center',
+      paddingHorizontal: 10,
+      marginVertical: 5,
+      borderRadius: 5,
+      width: '100%',
+      paddingTop: '50%',
     },
     text: {
       margin: 2,
+      fontWeight: 'bold'
     },
     alternativeContainer: {
       marginVertical: 2,
