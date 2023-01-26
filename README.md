@@ -3,8 +3,7 @@ Aplicação em React Native.
 
 Realizado no âmbito da disciplina de Desenvolvimento para Dispositivos Móveis III do Curso Programação para Dispositivos Móveis.
 
-Como correr
-Download do ZIP ou clone do repo e depois:
+Depois de fazer download ou clone do Projeto:
 
 - npm install
 - npx react-native start
