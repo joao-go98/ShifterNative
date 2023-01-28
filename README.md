@@ -8,3 +8,9 @@ Depois de fazer download ou clone do Projeto:
 - npm install
 - npx react-native start
 - npm run android / npm run ios
+
+Credenciais do Admin
+
+- username: Joao
+- email: joao@admin.com
+- password: 123456
